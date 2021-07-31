@@ -4,7 +4,7 @@ import random
 
 # Client 1
 
-conn = Client(('localhost', 6000), authkey=b'secret password') 
+conn = Client(('localhost', 3333), authkey=b'secret password') 
 
 # write to the socket which url port which is local 6000
 i = 0
@@ -13,8 +13,8 @@ while(i!=5):
     conn.send("philosopher "+str(i)+" sit in the place")
     conn.send("philosopher "+str(i)+" started to eating")
     #send these messages to the listener process via socket 
-    time.sleep(random.randint(3, 15))
-    #choose random time interval between 3 and 15 seconds for every operation
+    time.sleep(random.randint(3, 33))
+    #choose random time interval between 3 and 33 seconds for every operation
     
     print("philosopher "+str(i)+" stop eating and leave restaurant")
     i+=1
