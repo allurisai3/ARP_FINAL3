@@ -20,7 +20,7 @@ python3 main.py
 **ABOUT THE CODE**
 
 
-We have 2 different python files: main.py and p1.py. Each one represents the 2 processes and these 2 processes' connection is provided via socket. Each files must be run in different shell window . The main.py writes to the socket in order to p1.py read from same socket which is local URL port is 8888 in this case. It is arbitrary to choose the port but it must be local. We have 5 philosopher and each one enter the restaurant, sit in the place, start to eat in randomly given time interval between 3 to 15 seconds, queued on a FIFO basis. These data send to p1.py process via socket. After each philosopher finishes the operation the main.py prints out philosopher stop eating and left.At the end it sends close message to p1.py that triggers the close the connection between 2 processes.
+We have 2 different python files: main.py and p1.py. Each one represents the 2 processes and these 2 processes' connection is provided via socket. Each files must be run in different shell window . The main.py writes to the socket in order to p1.py read from same socket which is local URL port is 3333 in this case. It is arbitrary to choose the port but it must be local. We have 5 philosopher and each one enter the restaurant, sit in the place, start to eat in randomly given time interval between 3 to 33 seconds, queued on a FIFO basis. These data send to p1.py process via socket. After each philosopher finishes the operation the main.py prints out philosopher stop eating and left.At the end it sends close message to p1.py that triggers the close the connection between 2 processes.
 
 
 **EXPECTED RESULTS**
