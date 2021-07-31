@@ -1,7 +1,7 @@
 from multiprocessing.connection import Listener
 
-listener = Listener(('localhost', 6000), authkey=b'secret password')
-# listens to socket local 6000 url
+listener = Listener(('localhost', 3333), authkey=b'secret password')
+# listens to socket local 3333 url
 
 running = True
 
